@@ -1,12 +1,11 @@
 RecyclerView
 ======================
-## TASK 2
+## TASK 3
 ========================
-#### Task 2 is all about implementing recyclerView in the application. 
+#### Setting up an onClickListener on recyclerview items.
 #### App video Demonstration
 ![](./video.gif)
 #### Screenshot
-<img height="700" width="50%" src="screenshots/screenshot5.png">
-
+<img height="700" width="50%" src="screenshots/screenshot6.png">
 
 ===========================================================================
