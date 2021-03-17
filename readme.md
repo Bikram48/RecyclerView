@@ -1,11 +1,9 @@
 RecyclerView
 ======================
-## TASK 3
+## Homework
 ========================
-#### Setting up an onClickListener on recyclerview items.
-#### App video Demonstration
+#### This is the app build to view the list of recipes. All recipes contains the name,description,image,ingredients and procedures.
+#### App Demonstration
 ![](./video.gif)
-#### Screenshot
-<img height="700" width="50%" src="screenshots/screenshot6.png">
 
 ===========================================================================
