@@ -33,6 +33,7 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
         holder.wordItemView.setText(mCurrent);
     }
 
+
     @Override
     public int getItemCount() {
         return mWordList.size();
@@ -55,5 +56,6 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
             mWordList.set(mPosition, "Clicked! " + element);
             mAdapter.notifyDataSetChanged();
         }
+        
     }
 }

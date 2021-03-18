@@ -1,11 +1,9 @@
 RecyclerView
 ======================
-## TASK 3
+## Coding Challenge
 ========================
-#### Setting up an onClickListener on recyclerview items.
+#### Resets the recyclerview in its initial state when reset menu got clicked.
 #### App video Demonstration
-![](./video.gif)
-#### Screenshot
-<img height="700" width="50%" src="screenshots/screenshot6.png">
+![](./coding_challenge.gif)
 
 ===========================================================================

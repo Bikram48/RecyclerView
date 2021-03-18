@@ -14,6 +14,7 @@ import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import java.util.LinkedList;
 
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private final LinkedList<String> mWordList = new LinkedList<>();
     private RecyclerView mRecyclerView;
     private WordListAdapter mAdapter;
+    private MenuItem resetMenu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +49,9 @@ public class MainActivity extends AppCompatActivity {
         mAdapter=new WordListAdapter(this,mWordList);
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -64,7 +68,12 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.resetMenu) {
+            mWordList.clear();
+            for (int i = 1; i < 20; i++) {
+                mWordList.add("Word " + i);
+            }
+            mAdapter.notifyDataSetChanged();
             return true;
         }
 
